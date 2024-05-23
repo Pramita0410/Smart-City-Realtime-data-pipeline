@@ -36,3 +36,12 @@ The data is simulated like an IoT device that generates data like
 
 - Integrated PowerBI with Redshift Cluster to create interactive dashboards and generate insights
 
+## How to run the project
+- Clone this repository first
+- Install all the python dependencies using `pip install -r requirements.txt` Python 3.8 was used at the time of development
+- To start all the services: `sudo docker compose up -d` inside your project folder
+- Run `sudo docker ps` to verify if all the services are running
+- Run `python jobs/main.py` to run the producer simulation
+- `sudo docker exec -it smart-city-spark-master-1 spark-submit --master spark://spark-master:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk:1.11.469 jobs/spark-city.py` to submit a job to master spark and consume the producer data
+
+
