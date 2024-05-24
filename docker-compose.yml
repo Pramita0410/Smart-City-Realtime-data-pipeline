@@ -13,7 +13,7 @@ x-spark-common: &spark-common
     SPARK_WORKER_MEMORY: 1g
     SPARK_MASTER_URL: spark://spark-master:7077
   networks:
-    - datamasterylab
+    - smartcitylab
 
 services:
   zookeeper:
@@ -31,7 +31,7 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - datamasterylab
+      - smartcitylab
   broker:
     image: confluentinc/cp-server:7.4.0
     hostname: broker
@@ -67,7 +67,7 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - datamasterylab
+      - smartcitylab
   spark-master:
     image: bitnami/spark:latest
     volumes:
@@ -87,4 +87,4 @@ services:
 #  spark-worker-4:
 #    <<: *spark-common
 networks:
-  datamasterylab:
+  smartcitylab:
