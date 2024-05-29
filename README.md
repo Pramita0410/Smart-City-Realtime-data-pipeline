@@ -34,7 +34,9 @@ The data is simulated like an IoT device that generates data like
 
 ![image](https://github.com/Pramita0410/Smart-City-Realtime-data-pipeline/assets/114774760/0d7f9b13-d400-43b8-83ff-420083d74a6d)
 
-- Integrated PowerBI with Redshift Cluster to create interactive dashboards and generate insights
+- Integrated AWS QuickSight with Redshift Cluster to create interactive dashboards and generate insights
+![image](https://github.com/Pramita0410/Smart-City-Realtime-data-pipeline/assets/114774760/97fafff7-0d20-4a66-9d06-cedabf5a3a7a)
+
 
 ## How to run the project
 - Clone this repository first
