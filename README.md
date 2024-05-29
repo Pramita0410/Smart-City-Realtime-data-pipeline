@@ -14,6 +14,8 @@ The data is simulated like an IoT device that generates data like
 ## System Architecture
 
 ![smart-city-architecture](https://github.com/Pramita0410/Smart-City-Realtime-data-pipeline/assets/114774760/767597b5-f2f6-4436-a69b-71246993c15f)
+![architecture-smart-city](https://github.com/Pramita0410/Smart-City-Realtime-data-pipeline/assets/114774760/8c38c58c-89de-457d-ab28-204e982cda53)
+
 
 - A python script fetches the data from the IoT device and this data is sent to the Kafka broker (This script acts like the producer). Different types of data is stored in different topics. Zookeeper sits on top of this Kafka broker.
 - A spark achitecture with 1 Master node and 2 Worker nodes acts as the consumer to the Kafka broker. PySpark as a framkework was used to consume this data and push to a AWS S3 bucket.
